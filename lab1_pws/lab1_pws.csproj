@@ -8,4 +8,8 @@
     <Folder Include="wwwroot\scripts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\lab1_pws.Services\lab1_pws.Services.csproj" />
+  </ItemGroup>
+
 </Project>
