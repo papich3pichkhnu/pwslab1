@@ -1,3 +1,6 @@
+using lab1_pws.Services.Helpers.Mails;
+using lab1_pws.Services.Interfaces.Services;
+using lab1_pws.Services.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +28,8 @@ namespace lab1_pws
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.Configure<MailSettings>(Configuration.GetSection("EmailSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
