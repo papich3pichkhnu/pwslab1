@@ -2,10 +2,7 @@
 using lab1_pws.Services.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace lab1_pws.Controllers
@@ -45,7 +42,7 @@ namespace lab1_pws.Controllers
          public async Task<IActionResult> SendEmail(MailModel mailModel)
          {
              await _emailSender.SendEmailAsync(mailModel.To, mailModel.ToName, "Feedback message", mailModel.Body);
-             return RedirectToAction("Index");
+             return RedirectToAction(nameof(Index));
          }
 
         
