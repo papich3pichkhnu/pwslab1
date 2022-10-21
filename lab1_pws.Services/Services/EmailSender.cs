@@ -1,22 +1,17 @@
 ﻿using lab1_pws.Services.Interfaces.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using Microsoft.Extensions.Options;
+using System.Threading.Tasks;
 
 namespace lab1_pws.Services.Services
 {
     public class EmailSender : IEmailSender
     {
         private readonly Helpers.Mails.MailSettings _mailSettings;
-        public EmailSender(IOptions<Helpers.Mails.MailSettings> options)
+        public EmailSender(IOptionsMonitor<Helpers.Mails.MailSettings> options)
         {
-            _mailSettings = options.Value;
+            _mailSettings = options.CurrentValue;
         }
         public EmailSender()
         {
