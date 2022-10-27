@@ -57,7 +57,7 @@ namespace lab1_pws
                 var fullUri = $"{request.Scheme}://{request.Host}{request.PathBase}{request.Path}{request.QueryString}";
                 var time = DateTime.Now.ToString("HH:mm:ss");
                 var ip = context.Connection.RemoteIpAddress?.ToString();
-                logger.LogInformation("Processing request {0}", $"{fullUri} , time: {time}, ip: {ip}");
+                logger.LogInformation("Processing request {0}", $"{fullUri} , time: {time}, ip: {ip} ");
                 await next.Invoke();
             });
 
