@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Зворотній зв'язок";
+}
+<h1 class="text-center">@ViewData["Title"]</h1>
+<div class="container">
+    <form action="~/send-email" method="post">
+        <div class="form-group">
+            <label for="username">Ваше ім'я:</label>
+            <input type="text" required name="ToName" class="form-control" id="username"/>            
+        </div>
+
+        <div class="form-group">
+            <label for="useremail">Ваша електрона адреса:</label>
+            <input type="email" required name="To" class="form-control" id="useremail"/>            
+        </div>
+
+        <div class="form-group">
+            <label for="usermessage">Ваше повідомлення:</label>
+            <textarea required name="Body" class="form-control" id="useremail" rows=5>        
+                </textarea>
+        </div>
+
+        <div class="form-group">
+        <button type="submit" class="btn btn-success" name="go">Відправити</button>
+        </div>
+
+    </form>
+</div>
