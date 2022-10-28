@@ -31,6 +31,7 @@ namespace lab1_pws
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            System.IO.Directory.CreateDirectory("Logs");
             var datetime = DateTime.Now.ToString("yyyy-MM-ddTHH-mm-ss");
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), $"Logs/{datetime}.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
