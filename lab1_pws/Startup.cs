@@ -1,4 +1,5 @@
 using lab1_pws.Services.Helpers.Mails;
+using lab1_pws.Services.Helpers.Files;
 using lab1_pws.Services.Interfaces.Services;
 using lab1_pws.Services.Services;
 using Microsoft.AspNetCore.Builder;
@@ -25,7 +26,9 @@ namespace lab1_pws
         {
             services.AddControllersWithViews();
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IFileService, FileService>();
             services.Configure<MailSettings>(Configuration.GetSection("EmailSettings"));
+            services.Configure<FileSettings>(Configuration.GetSection("FileSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

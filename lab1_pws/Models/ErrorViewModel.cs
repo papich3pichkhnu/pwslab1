@@ -1,6 +1,4 @@
-using System;
-
-namespace lab1_pws.ViewModels
+namespace lab1_pws.Models
 {
     public class ErrorViewModel
     {

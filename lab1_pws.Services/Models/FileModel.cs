@@ -1,4 +1,4 @@
-﻿namespace lab1_pws.Models
+﻿namespace lab1_pws.Services.Models
 {
     public class FileModel
     {
