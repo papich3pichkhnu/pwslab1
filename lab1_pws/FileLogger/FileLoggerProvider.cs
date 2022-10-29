@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace lab1_pws.Services.Services
+namespace lab1_pws
 {
     public class FileLoggerProvider : ILoggerProvider
     {

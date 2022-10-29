@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace lab1_pws.Services.Services
+namespace lab1_pws
 {
     public class FileLogger : ILogger
     {
