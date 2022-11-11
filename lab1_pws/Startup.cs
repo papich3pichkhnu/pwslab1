@@ -13,6 +13,8 @@ using System.IO;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Http;
 
 namespace lab1_pws
 {
@@ -57,6 +59,13 @@ namespace lab1_pws
             loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), $"Logs/{datetime}.txt"));
             var logger = loggerFactory.CreateLogger("FileLogger");
 
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\Files")),
+
+                RequestPath = new PathString("/Files")
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -67,8 +76,15 @@ namespace lab1_pws
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
-            
+            app.UseStaticFiles(new StaticFileOptions() 
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\Files")),
+                RequestPath = new PathString("/Files")
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
