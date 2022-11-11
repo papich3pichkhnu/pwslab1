@@ -178,7 +178,7 @@ body{
     }
 }
 
-.box-info{
+.box-info {
     background: url(../img/bg-sml.jpg) center/cover;
     background-color: transparent;
     width: 705px;
@@ -187,18 +187,22 @@ body{
     right: 50px;
     bottom: 50px;
     display: flex;
-    &-block{
+
+    &-block {
         color: #fff;
         padding: 20px 100px;
-        h3{
+        width:50px;
+        h3 {
             font-weight: 800;
             font-size: 45px;
             margin-bottom: 0;
         }
-        p{
+
+        p {
             font-size: 20px;
             line-height: 24px;
             white-space: nowrap;
+            word-wrap: break-word;
         }
     }
 }

@@ -1,26 +1,28 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@inject Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.RequestLocalizationOptions> locOptions
+@{
     ViewData["Title"] = "Головна";
 }
 <div class="container-index">
     <div class="content"></div>
     <div class="container text">
         <div class="text-box">
-            <h2>Інтерактивна</h2>
+            <h2>@localizer["InteractiveTitle"]</h2>
             <h1>
-                Культурно-туристична <br>
-                мапа Хмельницького
+                @localizer["CultureAndTouristicalTitle"] <br>
+                @localizer["MapTitle"] @localizer["KhmelnytskiyWord"]
             </h1>
-            <a class="btn" href="#">Детальніше</a>
+            <a class="btn" href="#">@localizer["DetailTitle"]</a>
         </div>
     </div>
     <div class="box-info">
         <div class="box-info-block">
             <h3>2015</h3>
-            <p>пам’яток</p>
+            <p>@localizer["AttractionTitle"]</p>
         </div>
         <div class="box-info-block">
             <h3>269</h3>
-            <p>природоохоронних зон</p>
+            <p>@localizer["NatureZonesTitle"]</p>
         </div>
     </div>
 </div>

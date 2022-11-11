@@ -10,6 +10,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 namespace lab1_pws
 {
@@ -24,11 +27,26 @@ namespace lab1_pws
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
             services.AddControllersWithViews();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IFileService, FileService>();
             services.Configure<MailSettings>(Configuration.GetSection("EmailSettings"));
             services.Configure<FileSettings>(Configuration.GetSection("FileSettings"));
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+           {
+                new CultureInfo("en"),
+                new CultureInfo("uk")
+            };
+
+                options.DefaultRequestCulture = new RequestCulture("uk");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,25 +68,28 @@ namespace lab1_pws
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
+
 
             app.Use(async (context, next) =>
             {
-                var request=context.Request;
+                var request = context.Request;
                 var fullUri = $"{request.Scheme}://{request.Host}{request.PathBase}{request.Path}{request.QueryString}";
                 var time = DateTime.Now.ToString("HH:mm:ss");
                 var ip = context.Connection.RemoteIpAddress?.ToString();
-                logger.LogInformation("Processing request {0}", $"{fullUri} , time: {time}, ip: {ip} ");
+                //logger.LogInformation("Processing request {0}", $"{fullUri} , time: {time}, ip: {ip} ");
+                //logger.LogInformation($"CurrentCulture:{CultureInfo.CurrentCulture.Name}, CurrentUICulture:{CultureInfo.CurrentUICulture.Name}") ;
                 await next.Invoke();
             });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });           
-        }       
+            });
+        }
     }
 }
