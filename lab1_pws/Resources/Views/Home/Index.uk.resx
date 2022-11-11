@@ -141,6 +141,9 @@
   <data name="IndexNav" xml:space="preserve">
     <value>Головна</value>
   </data>
+  <data name="IndexTitle" xml:space="preserve">
+    <value>Головна</value>
+  </data>
   <data name="InteractiveMapFooter" xml:space="preserve">
     <value>Інтерактивна культурно-туристична мапа</value>
   </data>

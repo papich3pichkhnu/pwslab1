@@ -1,7 +1,9 @@
 ﻿@using lab1_pws.Services.Models
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@inject Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.RequestLocalizationOptions> locOptions
 @model IEnumerable<lab1_pws.Services.Models.FileModel>
 @{
-    ViewData["Title"] = "Безкоштовна хмара";
+    ViewData["Title"] = localizer["CloudTitle"];
 }
 <div class="content-color"><h1>@ViewData["Title"]</h1></div>
 <br />
@@ -10,19 +12,19 @@
         <form method="post" action="~/upload-file" enctype="multipart/form-data">
         
             <div class="mb-3">
-                <label for="fileInput" class="form-label">Завантажити новий файл</label>
+                <label for="fileInput" class="form-label">@localizer["UploadNewFile"]</label>
                 <input type="file" class="form-control" id="fileInput" aria-describedby="emailHelp" name="File">
                 
             </div>
-             <button type="submit" class="btn btn-primary">Відправити</button>
+             <button type="submit" class="btn btn-primary">@localizer["SendButton"]</button>
         </form>
     </div>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Назва файлу</th>
-                <th scope="col">Завантажити</th>
+                <th scope="col">@localizer["NameOfFile"]</th>
+                <th scope="col">@localizer["DownloadText"]</th>
             </tr>
         </thead>
         <tbody>
@@ -35,7 +37,7 @@
                 <tr>
                     <td>@(i+1)</td>
                     <td>@fm.FileName</td>
-                    <td><a href="~/download-file?filename=@fm.FileName">Завантажити</a></td>
+                    <td><a href="~/download-file?filename=@fm.FileName">@localizer["DownloadText"]</a></td>
                 </tr>
 
                 i++;

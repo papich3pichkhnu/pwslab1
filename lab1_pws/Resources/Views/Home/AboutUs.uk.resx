@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsContent" xml:space="preserve">
+    <value>&lt;span&gt;Цей сайт створено учнями гімназії №2 м.Хмельницького зі статусом "Асоційована школа ЮНЕСКО", учасниками гуртка «Історичне краєзнавство», що при Хмельницькому міському центрі краєзнавства, туризму та екскурсій учнівської молоді,  в рамках  освітньої  програми «Історія моєї громади. Минуле  для спільного майбутнього»  та у межах проєкту «Конкурс з історії в Білорусії, Грузії, Молдові та Україні».&lt;/span&gt;
+            &lt;h2&gt;АКТУАЛЬНІСТЬ ПРОЕКТУ&lt;/h2&gt;
+            &lt;p&gt;На сьогодні в умовах адміністративної реформи та зростання ролі місцевого самоврядування в Україні актуалізуються питання економічного, соціального та культурного розвитку місцевих громад. Відтак зростає роль локальної історико-культурної спадщини як одного з механізмів розвитку місцевих громад, платформи для консолідації й інтеграції спільноти. Перед місцевими освітянами, музейниками, громадськими діячами актуалізується завдання по роботі з історико-культурним надбанням у місцевій громаді. Сучасні культуроохоронні технології, проведення історичних досліджень, збереження об’єктів спадщини, організація ефективної роботи місцевих музеїв, популяризація історичного минулого, «брендування» спадщини як інструмента капіталізації середовища, розробка туристичних маршрутів  тощо – усе це становить потужний потеціал не тільки для формування локальної, регіональної та національної  ідентичності  членів місцевої громади, але й для її економічного розвитку.
+                &lt;br&gt;&lt;br&gt;
+            Найважливішим завданням є  підготовка молодого покоління до самореалізації  у майбутньому шляхом залучення до роботи з історико-культурною спадщиною рідного краю.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;ЧОМУ МИ СТВОРИЛИ ЦЕЙ САЙТ?&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Хмельниччина - край унікальної і самобутньої культури. Загальна кількість пам'яток археології, історії, архітектури, містобудування і монументального мистецтва у Хмельницькій області складає 2015 одиниць. На державному обліку перебуває  387  пам'яток архітектури і містобудування.
+                &lt;br&gt;&lt;br&gt;
+            Туристичний потенціал Хмельниччини включає мальовничу природу (річка Дністер, Товтри, ліси та озера на півночі області), мінеральні води (води «Нафтуся», води Миргородського типу та радонові), історичну й архітектурну спадщину (м. Кам’янець-Подільський, селище Меджибіж, с. Самчики), санаторії для медичного лікування і відновлення здоров’я.
+            &lt;br&gt;&lt;br&gt;
+            На Хмельниччині існує &lt;strong&gt;269&lt;/strong&gt; природоохоронних зон і об’єктів: &lt;strong&gt;198&lt;/strong&gt; пам’яток  природи (4 державного значення), ботанічний сад у м. Кам’янці-Подільському,  &lt;strong&gt;24&lt;/strong&gt; парки,  яким присвоєно статус пам’яток природи паркового мистецтва (у тому числі 8 – державного значення), &lt;strong&gt;7&lt;/strong&gt; природних заповідників, &lt;strong&gt;39&lt;/strong&gt; заказників (із них 15 – державні) та одна пам’ятка &lt;strong&gt;ЮНЕСКО&lt;/strong&gt;
+            &lt;br&gt;&lt;br&gt;
+            Визначними туристичними місцями області є: Національний природній парк «Подільські Товтри», Національний історико-культурний заповідник «Кам’янець», державні історико-культурні заповідники «Товтри» і «Самчики». Також існують цікаві історичні об’єкти (у населених пунктах Сутківці, Антоніни, Губин, Ізяслав, Гриців, Зіньків, Старокостянтинів, Пилява, Жванчик, Сатанів, Іванківці тощо), ряд санаторно-курортних закладів і центрів відновлення здоров’я на базі мінеральних вод.
+            &lt;br&gt;&lt;br&gt;
+            Вже два десятиліття наше місто Хмельницький для гостей асоціюється у переважній більшості лише як місто із потужним речовим ринком. Проте, сьогодні у місті існує багато привабливих для туристів об’єктів від  культурно-історичних до розважальних. Зокрема, це  унікальний фотомузей,  неповторні ігрові комплекси з металевих монументально-просторових скульптур Миколи Мазура для дозвілля з дітьми; унікальні пам’ятники, мурали, креативні локації для молоді, квест-кімнати, Аквапарк та багато іншого.
+            &lt;br&gt;&lt;br&gt;
+            Проте, на сьогодні не існує єдиного інтернет-ресурсу, на якому містився б короткий опис цих важливих туристичних об’єктів міста Хмельницького та  Хмельницької області, також практично не можливо знайти ці об’єкти  на інтерактивній туристичній мапі.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;МЕТА НАШОГО ПРОЄКТУ&lt;/h2&gt;
+    
+                
+            &lt;p&gt;Використовуючи можливості Google Maps створити інтерактивні мапи Хмельницького та Хмельницької області, з нанесенням на них пам’яток історико-культурної спадщини;&lt;br&gt;
+                Здійснити  короткі та докладніші описи до об’єктів, нанесених на мапи;&lt;br&gt;
+                Розробити цікаві туристичні маршрути по місту Хмельницькому та Хмельницькій області;&lt;br&gt;
+                Зробити історію громади цікавою та інтерактивною;&lt;br&gt;
+                Сприяти підвищенню інтересу молоді до історії свого міста та області;&lt;br&gt;
+                Популяризувати туристичну привабливість Хмельниччини;  &lt;br&gt;
+                Згуртувати соціально - активну молодь  та розвинути волонтерський туристичний рух на Хмельниччині, побудований на засадах збору та розташування на інтерактивній мапі Хмельниччини  цікавих туристичних об'єктів;&lt;br&gt;
+                Створити ресурс, який сприятиме активній комунікації між міськими та сільськими громадами.&lt;/p&gt;
+            
+    
+            &lt;h2&gt;ЗАВДАННЯ ПРОЄКТУ&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Створення ініціативної групи проєкту. &lt;br&gt;
+                Розробка основних завдань, планування роботи та розподіл обов’язків між усіма дослідниками групи.&lt;br&gt;
+                Збір інформації, проведення історичних досліджень (фото, відеоряду, інформаційних сторінок, презентаційних виступів).&lt;br&gt;
+                Координування діяльності учасників проєкту, аналіз досліджень.&lt;br&gt;
+                Розташування інформації на сайті.&lt;br&gt;
+                Створення цікавих туристичних маршрутів містом та областю.&lt;br&gt;
+                Створення  сайту „Інтерактивна культурно-туристична мапа Хмельниччини”.&lt;br&gt;
+                Проведення дослідницьких експедицій містом та областю.&lt;br&gt;
+                Наповнення інтерактивної мапи Хмельницького короткими  (на українській, англійській, німецькій мовах)  та докладнішими(на українській) описами культурно-туристичних пам'яток міста та області.
+                Презентація готового продукту проєкту  в  засобах  ЗМІ,  групах «Вайбер», соціальних мережах та вінформаційному просторі.&lt;br&gt;
+                Підготовка  екскурсоводів по розроблених маршрутах.&lt;br&gt;
+                Перевірка валідності роботи сайту.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;ПРО НАШУ КОМАНДУ&lt;/h2&gt;
+    
+    
+            &lt;p&gt;КЕРІВНИК ПРОЄКТУ (ТЬЮТОР): &lt;br&gt;
+                Степанова Оксана Володимирівна -  вчитель  історії, спеціаліст вищої категорії, старший вчитель гімназії №2 м. Хмельницького зі статусом „Асоційована школа ЮНЕСКО”. Керівник команд та учасник міжнародних, всеукраїнських та загальноміських проектів, учасник освітньої  програми «Історія моєї громади. Минуле для спільного майбутнього»  у межах проекту «Конкурс з історії в Білорусії, Грузії, Молдові та Україні» у 2017-2018 рр.
+                &lt;br&gt;&lt;br&gt;
+                 УЧАСНИКИ НАШОЇ КОМАНДИ:
+                АВСІЄВИЧ ВОЛОДИМИР -  розробник сайту, гордість гімназії №2, переможець  ІV етапу Всеукраїнської учнівської олімпіади з інформаційних технологій, переможець предметних олімпіад з фізики та математики;&lt;br&gt;
+                ПОТУРНЯК АНАСТАСІЯ та СМОЛЯР ВІКТОРІЯ  - фотографи та автори маршрутів, переможці щорічних фотоконкурсів «Хмельницький крізь об’єктив»;&lt;br&gt;
+                ЛІСОВА ВІКТОРІЯ та  БУНЯК ВАЛЕРІЯ - перекладачі основної інформації на англійську та німецьку мови, автори маршрутів, переможці предметних олімпіад з іноземних мов;&lt;br&gt;
+                СИС ЮЛІЯ, ГОНЧАР ІВАН, КОВАЛЬ ДМИТРО, СТЕЦЮК ІННА, ФЕРТЮК МАКСИМ – дослідники  історичної та культурної спадщини міста Хмельницького та області, автори туристичних маршрутів, переможці предметних олімпіад, активні учасники учнівського самоврядування, кур’єри ЮНЕСКО.&lt;/p&gt;
+    
+    
+    
+            &lt;h2&gt;НАШІ ПАРТНЕРИ ТА КОНСУЛЬТАНТИ&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Надання джерел для опису об’єктів культурно-туристичної спадщини. Сприяння у взаємодії з громадою щодо популяризації об’єктів. &lt;br&gt;
+                Хмельницька обласна наукової універсальної бібліотеки. &lt;br&gt;
+                Директор Чабан Катерина Анатоліївна.&lt;br&gt;
+                Борейко Валентина Миколаївна – завідувач відділу краєзнавства Хмельницької обласної наукової універсальної бібліотеки.&lt;br&gt;
+                Ярмолюк Анжела Григорівна – старший бібліограф Хмельницької обласної наукової універсальної бібліотеки.&lt;br&gt;&lt;br&gt;
+                
+                Хмельницька міська центральна бібліотека.&lt;br&gt;
+                Директор Козицька Тамара Степанівна&lt;br&gt;
+                
+                Хмельницька обласна бібліотека для юнацтва. &lt;br&gt;
+                Директор Таньчук Тамара Миколаївна.&lt;br&gt;
+                Романюк Леся Василівна – провідний фахівець Хмельницької обласної  юнацької бібліотеки.&lt;br&gt;&lt;br&gt;
+                
+                Сприяння у взаємодії з громадою щодо популяризації об’єктів. Сприяння у створенні  волонтерського загону учнів - екскурсоводів при музеї історії міста Хмельницького.&lt;br&gt;
+                Управління культкри та туризму Хмельницької міської ради.
+                Заступник начальника управління Шевченко Світлана Іванівна.&lt;br&gt;&lt;br&gt;
+                
+                Сприяння у взаємодії з громадою щодо популяризації об’єктів.&lt;br&gt;
+                Телерадіо компанія «Місто»&lt;br&gt;
+                Телерадіо компанія «Ексклюзив»&lt;br&gt;
+                Вікторіч Земба – кореспондент.&lt;br&gt;
+                Телерадіо компанія «Поділля центр»&lt;br&gt;&lt;br&gt;
+                
+                Сприяння у пошуку джерел для опису об’єктів культурно-туристичної спадщини  в Хмельницькій області.&lt;br&gt;
+                Хмельницький обласний краєзнавчий музей.&lt;br&gt;
+                Мельничук Оксана Анатоліївна – завідувач науково-масового відділу Хмельницького обласного краєзнавчого музею.&lt;br&gt;
+                Музей історії міста Хмельницького.&lt;br&gt;
+                Барабаш Галина Іванівна – директор.&lt;/p&gt;</value>
+  </data>
+  <data name="AboutUsTitle" xml:space="preserve">
+    <value>Про нас</value>
+  </data>
+</root>

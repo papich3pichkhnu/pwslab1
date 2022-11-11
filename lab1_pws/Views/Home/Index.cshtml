@@ -1,7 +1,7 @@
 ﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @inject Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.RequestLocalizationOptions> locOptions
 @{
-    ViewData["Title"] = "Головна";
+    ViewData["Title"] = localizer["IndexTitle"];
 }
 <div class="container-index">
     <div class="content"></div>

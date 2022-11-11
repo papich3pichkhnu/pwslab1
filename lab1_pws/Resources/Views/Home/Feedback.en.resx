@@ -117,46 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutUsNav" xml:space="preserve">
-    <value>About us</value>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Leave your feedback</value>
   </data>
-  <data name="AttractionTitle" xml:space="preserve">
-    <value>attractions</value>
+  <data name="SendButton" xml:space="preserve">
+    <value>Send</value>
   </data>
-  <data name="CloudNav" xml:space="preserve">
-    <value>Cloud</value>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your e-mail</value>
   </data>
-  <data name="CultureAndTouristicalTitle" xml:space="preserve">
-    <value>Cultural and tourist map</value>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Your message</value>
   </data>
-  <data name="DetailTitle" xml:space="preserve">
-    <value>Detail</value>
-  </data>
-  <data name="ExcursionOrder" xml:space="preserve">
-    <value>Ordering excursions</value>
-  </data>
-  <data name="FeedbackNav" xml:space="preserve">
-    <value>Feedback</value>
-  </data>
-  <data name="IndexNav" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="IndexTitle" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="InteractiveMapFooter" xml:space="preserve">
-    <value>Interactive cultural and tourist map</value>
-  </data>
-  <data name="InteractiveTitle" xml:space="preserve">
-    <value>Interactive</value>
-  </data>
-  <data name="KhmelnytskiyWord" xml:space="preserve">
-    <value>of Khmelnytskiy</value>
-  </data>
-  <data name="MapTitle" xml:space="preserve">
-    <value>map</value>
-  </data>
-  <data name="NatureZonesTitle" xml:space="preserve">
-    <value>nature protection zones</value>
+  <data name="YourName" xml:space="preserve">
+    <value>Your name</value>
   </data>
 </root>

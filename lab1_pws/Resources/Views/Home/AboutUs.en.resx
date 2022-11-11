@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsContent" xml:space="preserve">
+    <value>&lt;span&gt;This site was created by students of Khmelnytskyi gymnasium No. 2 with the status of "UNESCO Associated School", participants of the "Historical Local Lore" group, which is part of the Khmelnytsky City Center of Local Lore, Tourism and Student Youth Excursions, as part of the "History of My Community" educational program. The past for a common future" and within the project "History competition in Belarus, Georgia, Moldova and Ukraine".&lt;/span&gt;
+            &lt;h2&gt;PROJECT RELEVANCE&lt;/h2&gt;
+            &lt;p&gt;Today, under the conditions of administrative reform and the growing role of local self-government in Ukraine, the issues of economic, social and cultural development of local communities are becoming more relevant. Therefore, the role of local historical and cultural heritage is growing as one of the mechanisms for the development of local communities, a platform for community consolidation and integration. The task of working with the historical and cultural heritage in the local community is being updated before local educators, museum workers, and public figures. Modern cultural preservation technologies, conducting historical research, preservation of heritage objects, organization of effective work of local museums, popularization of the historical past, "branding" of heritage as a tool for environmental capitalization, development of tourist routes, etc. - all this constitutes a powerful potential not only for the formation of local, regional and national identity of members of the local community, but also for its economic development.
+                &lt;br&gt;&lt;br&gt;
+            The most important task is to prepare the young generation for self-realization in the future by involving them in working with the historical and cultural heritage of their native land.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;WHY DID WE CREATE THIS SITE?&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Khmelnych region is a land of unique and distinctive culture. The total number of monuments of archaeology, history, architecture, urban planning and monumental art in Khmelnytskyi region is 2015 units. There are 387 monuments of architecture and urban planning on the state register.
+                &lt;br&gt;&lt;br&gt;
+            The tourist potential of Khmelnytskyi includes picturesque nature (the Dniester River, the Tovtry River, forests and lakes in the north of the region), mineral waters (Naftusya waters, Myrhorodsky-type waters, and radon waters), historical and architectural heritage (the town of Kamianets-Podilskyi, the village of Medzhibyzh , the village of Samchyki), sanatoriums for medical treatment and health restoration.
+            &lt;br&gt;&lt;br&gt;
+            There are &lt;strong&gt;269&lt;/strong&gt; nature protection zones and objects in Khmelnytskyi region: &lt;strong&gt;198&lt;/strong&gt; natural monuments (4 of state importance), a botanical garden in Kamianets-Podilskyi, &lt;strong&gt; 24&lt;/strong&gt; parks, which have been assigned the status of natural monuments of park art (including 8 - of state importance), &lt;strong&gt;7&lt;/strong&gt; nature reserves, &lt;strong&gt;39&lt;/strong&gt; sanctuaries (of which 15 - state) and one &lt;strong&gt;UNESCO&lt;/strong&gt; monument
+            &lt;br&gt;&lt;br&gt;
+            Prominent tourist attractions of the region are: National Nature Park "Podilskyi Tovtry", National Historical and Cultural Reserve "Kamianets", State Historical and Cultural Reserves "Tovtry" and "Samchiki". There are also interesting historical objects (in the settlements of Sutkivtsi, Antonina, Gubyn, Izyaslav, Hrytsiv, Zinkiv, Starokostyantyniv, Pylyava, Zhvanchyk, Sataniv, Ivankivtsi, etc.), a number of sanatoriums and spa facilities and health restoration centers based on mineral waters .
+            &lt;br&gt;&lt;br&gt;
+            For two decades, our city of Khmelnytskyi has been associated for the vast majority only as a city with a powerful goods market. However, today the city has many tourist attractions, from cultural and historical to entertainment. In particular, this is a unique photo museum, unique game complexes made of metal monumental spatial sculptures of Mykola Mazur for leisure time with children; unique monuments, murals, creative locations for young people, quest rooms, Aqua Park and much more.
+            &lt;br&gt;&lt;br&gt;
+            However, today there is no single Internet resource that would contain a brief description of these important tourist objects of the city of Khmelnytskyi and Khmelnytskyi region, and it is also practically impossible to find these objects on an interactive tourist map.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;GOAL OF OUR PROJECT&lt;/h2&gt;
+    
+                
+            &lt;p&gt;Using the capabilities of Google Maps, create interactive maps of Khmelnytskyi and Khmelnytskyi Oblast, with monuments of historical and cultural heritage placed on them;&lt;br&gt;
+                Make short and detailed descriptions of the objects drawn on the maps;&lt;br&gt;
+                Develop interesting tourist routes in the city of Khmelnytskyi and Khmelnytskyi region;&lt;br&gt;
+                To make the history of the community interesting and interactive;&lt;br&gt;
+                To contribute to increasing the interest of young people in the history of their city and region;&lt;br&gt;
+                Promote the tourist attraction of Khmelnytskyi; &lt;br&gt;
+                To rally socially active youth and develop a volunteer tourist movement in Khmelnytskyi, built on the principles of collecting and locating interesting tourist objects on the interactive map of Khmelnytskyi;&lt;br&gt;
+                Create a resource that will promote active communication between urban and rural communities.&lt;/p&gt;
+            
+    
+            &lt;h2&gt;PROJECT TASK&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Creation of the initiative group of the project. &lt;br&gt;
+                Development of main tasks, planning of work and distribution of responsibilities among all researchers of the group.&lt;br&gt;
+                Gathering information, conducting historical research (photos, video series, information pages, presentations).&lt;br&gt;
+                Coordination of activities of project participants, research analysis.&lt;br&gt;
+                Location of information on the site.&lt;br&gt;
+                Creation of interesting tourist routes in the city and region.&lt;br&gt;
+                Creation of the site "Interactive cultural and tourist map of Khmelnytskyi region".&lt;br&gt;
+                Conducting research expeditions in the city and region.&lt;br&gt;
+                Filling the interactive map of Khmelnytskyi with short (in Ukrainian, English, German) and more detailed (in Ukrainian) descriptions of cultural and tourist attractions of the city and region.
+                Presentation of the finished product of the project in mass media, Viber groups, social networks and the information space.&lt;br&gt;
+                Training of tour guides on developed routes.&lt;br&gt;
+                Checking the validity of the website.&lt;/p&gt;
+    
+    
+            &lt;h2&gt;ABOUT OUR TEAM&lt;/h2&gt;
+    
+    
+            &lt;p&gt;PROJECT MANAGER (TUTOR): &lt;br&gt;
+                Stepanova Oksana Volodymyrivna - history teacher, specialist of the highest category, senior teacher of gymnasium No. 2 in Khmelnytskyi with the status of "UNESCO Associated School". Team leader and participant of international, all-Ukrainian and city-wide projects, participant of the educational program "History of my community. The past for a common future" within the framework of the project "History Competition in Belarus, Georgia, Moldova and Ukraine" in 2017-2018.
+                &lt;br&gt;&lt;br&gt;
+                 MEMBERS OF OUR TEAM:
+                AVSIEVYCH VOLODYMYR - site developer, pride of gymnasium No. 2, winner of the 4th stage of the All-Ukrainian student Olympiad in information technologies, winner of subject Olympiads in physics and mathematics;&lt;br&gt;
+                ANASTASIA POTURNYAK and VICTORIA SMOLYAR - photographers and authors of routes, winners of the annual photo contest "Khmelnytskyi through the lens";&lt;br&gt;
+                VICTORIA LISOVA and VALERIA BUNYAK - translators of basic information into English and German, authors of routes, winners of subject olympiads in foreign languages;&lt;br&gt;
+                SIS YULIYA, GONCHAR IVAN, KOVAL DMYTRO, STETSYUK INNA, FERTYUK MAKSYM are researchers of the historical and cultural heritage of the city of Khmelnytskyi and the region, authors of tourist routes, winners of subject olympiads, active participants in student self-government, UNESCO couriers.&lt;/p&gt;
+    
+    
+    
+            &lt;h2&gt;OUR PARTNERS AND CONSULTANTS&lt;/h2&gt;
+    
+    
+            &lt;p&gt;Providing sources for the description of objects of cultural and touristic heritage. Assistance in interaction with the community regarding the popularization of objects. &lt;br&gt;
+                Khmelnytskyi Regional Scientific Universal Library. &lt;br&gt;
+                Director Chaban Kateryna Anatolyivna.&lt;br&gt;
+                Valentyna Mykolaivna Boreyko is the head of the local history department of the Khmelnytskyi Regional Scientific Universal Library.&lt;br&gt;
+                Angela Hrygorivna Yarmoliuk is a senior bibliographer of the Khmelnytskyi Regional Scientific Universal Library.&lt;br&gt;&lt;br&gt;
+                
+                Khmelnytskyi City Central Library.&lt;br&gt;
+                Director Kozytska Tamara Stepanivna&lt;br&gt;
+                
+                Khmelnytskyi Regional Library for Youth. &lt;br&gt;
+                Director Tamara Mykolaivna Tanchuk.&lt;br&gt;
+                Lesya Vasylivna Romanyuk is a leading specialist of the Khmelnytskyi Regional Youth Library.&lt;br&gt;&lt;br&gt;
+                
+                Assistance in interaction with the community regarding the popularization of objects. Assistance in the creation of a volunteer squad of students - tour guides at the museum of the history of the city of Khmelnytskyi.&lt;br&gt;
+                Department of Culture and Tourism of the Khmelnytskyi City Council.
+                Svitlana Ivanivna, deputy head of the Shevchenko department.&lt;br&gt;&lt;br&gt;
+                
+                Assistance in interaction with the community regarding the popularization of objects.&lt;br&gt;
+                TV and radio company "Misto"&lt;br&gt;
+                TV and radio company "Exclusive"&lt;br&gt;
+                Viktorich Zemba is a correspondent.&lt;br&gt;
+                TV and radio company "Podillya Center"&lt;br&gt;&lt;br&gt;
+                
+                Assistance in finding sources for the description of objects of cultural and touristic heritage in the Khmelnytskyi region.&lt;br&gt;
+                Khmelnytskyi Regional Museum of Local Lore.&lt;br&gt;
+Oksana Anatolyivna Melnychuk is the head of the scientific and mass department of the Khmelnytskyi Regional Museum of Local Lore.&lt;br&gt;
+                 Museum of the History of the City of Khmelnytskyi.&lt;br&gt;
+                 Galina Ivanovna Barabash is the director.&lt;/p&gt;</value>
+  </data>
+  <data name="AboutUsTitle" xml:space="preserve">
+    <value>About us</value>
+  </data>
+</root>
