@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,7 +15,7 @@
 </head>
 <body>
     <header class="header">
-         <div class="container">
+        <div class="container">
             <div class="header-logo">
                 <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/logo.svg" alt="Logo"></a>
             </div>
@@ -20,27 +23,33 @@
             <div class="header-nav">
                 <nav>
                     <ul>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Головна</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["IndexNav"]</a></li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">@localizer["AboutUsNav"]</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Feedback">@localizer["FeedbackNav"]</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Cloud">@localizer["CloudNav"]</a></li>
                         <!--<li><a href="mapa.html">Мапа</a></li>
-                        
+
                         <li><a href="places.html">Туристичні місця</a></li>
                         <li><a href="routes.html">Туристичні маршрути</a></li>
                         <li><a href="festivals.html">Фестивалі</a></li>-->
-                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">Про нас</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Feedback">Зворотній зв'язок</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Cloud">Хмара</a></li>
                     </ul>
                 </nav>
             </div>
-            
+
             <div class="header-search">
                 <a href="#"><img src="~/img/poshyk.svg" alt=""></a>
             </div>
-        </div>        
+            <div>
+                @{
+                    await Html.RenderPartialAsync("_CultureSelect");
+                }
+            </div>
+        </div>
     </header>
     @RenderBody()
-    
-   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
     <script src="~/scripts/site.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -50,15 +59,16 @@
             <div class="footer-box">
                 <div class="footer-box-logo">
                     <img src="~/img/logo-footer.svg" alt="Logo">
-                    <h3>Інтерактивна культурно-туристична мапа <br> Хмельницького</h3>
+                    <h3>@localizer["InteractiveMapFooter"] <br> @localizer["KhmelnytskiyWord"]</h3>
                 </div>
                 <div class="footer-nav">
                     <nav>
                         <ul>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Index">Головна</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">Про нас</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Feedback">Зворотній зв'язок</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Cloud">Хмара</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["IndexNav"]</a></li>
+
+                            <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">@localizer["AboutUsNav"]</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="Feedback">@localizer["FeedbackNav"]</a></li>
+                            <li><a asp-area="" asp-controller="Home" asp-action="Cloud">@localizer["CloudNav"]</a></li>
                             <!--<li><a href="mapa.html">Мапа</a></li>
                             <li><a class="active" href="about-us.html">Про нас</a></li>
                             <li><a href="places.html">Туристичні місця</a></li>
@@ -79,7 +89,7 @@
                     <a href="mailto:turmapa@ukr.net">turmapa@ukr.net</a>
                 </div>
                 <div class="footer-block-text">
-                    Замовлення екскурсій: <br>
+                    @localizer["ExcursionOrder"]: <br>
                     <a href="tel:+380982530048">+380 (98) 253 00 48</a>
                 </div>
                 <div class="footer-block-social">
