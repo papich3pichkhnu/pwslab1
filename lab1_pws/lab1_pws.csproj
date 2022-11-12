@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logs\" />
     <Folder Include="ViewModels\" />
     <Folder Include="wwwroot\Files\" />
     <Folder Include="wwwroot\scripts\" />

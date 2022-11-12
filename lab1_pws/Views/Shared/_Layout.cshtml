@@ -21,20 +21,8 @@
             </div>
             <div class="header-box"></div>
             <div class="header-nav">
-                <nav>
-                    <ul>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["IndexNav"]</a></li>
-
-                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">@localizer["AboutUsNav"]</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Feedback">@localizer["FeedbackNav"]</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Cloud">@localizer["CloudNav"]</a></li>
-                        <!--<li><a href="mapa.html">Мапа</a></li>
-
-                        <li><a href="places.html">Туристичні місця</a></li>
-                        <li><a href="routes.html">Туристичні маршрути</a></li>
-                        <li><a href="festivals.html">Фестивалі</a></li>-->
-                    </ul>
-                </nav>
+                <partial name="_NavbarPartial" />
+                
             </div>
 
             <div class="header-search">
@@ -62,21 +50,7 @@
                     <h3>@localizer["InteractiveMapFooter"] <br> @localizer["KhmelnytskiyWord"]</h3>
                 </div>
                 <div class="footer-nav">
-                    <nav>
-                        <ul>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["IndexNav"]</a></li>
-
-                            <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">@localizer["AboutUsNav"]</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Feedback">@localizer["FeedbackNav"]</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Cloud">@localizer["CloudNav"]</a></li>
-                            <!--<li><a href="mapa.html">Мапа</a></li>
-                            <li><a class="active" href="about-us.html">Про нас</a></li>
-                            <li><a href="places.html">Туристичні місця</a></li>
-                            <li><a href="routes.html">Туристичні маршрути</a></li>
-                            <li><a href="festivals.html">Фестивалі</a></li>
-                            -->
-                        </ul>
-                    </nav>
+                    <partial name="_NavbarPartial" />
                 </div>
             </div>
             <hr>
