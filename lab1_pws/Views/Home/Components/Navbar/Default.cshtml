@@ -1,0 +1,10 @@
+﻿@model IEnumerable<string>
+@inject IViewLocalizer localizer
+
+    <ul>
+        @foreach (var elem in Model)
+        {
+            <li><a asp-area="" asp-controller="Home" asp-action="@elem">@localizer[@elem+"Nav"]</a></li>
+        }
+    </ul>
+
