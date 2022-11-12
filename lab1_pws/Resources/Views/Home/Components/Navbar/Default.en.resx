@@ -129,4 +129,7 @@
   <data name="IndexNav" xml:space="preserve">
     <value>Main</value>
   </data>
+  <data name="PersonFormNav" xml:space="preserve">
+    <value>Person form</value>
+  </data>
 </root>

@@ -15,6 +15,9 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.Http;
+using FluentValidation;
+using lab1_pws.Models;
+using lab1_pws.Validators;
 
 namespace lab1_pws
 {
@@ -35,6 +38,7 @@ namespace lab1_pws
             services.AddControllersWithViews();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IFileService, FileService>();
+            services.AddScoped<IValidator<Person>, PersonValidator>();
             services.Configure<MailSettings>(Configuration.GetSection("EmailSettings"));
             services.Configure<FileSettings>(Configuration.GetSection("FileSettings"));
             services.Configure<RequestLocalizationOptions>(options =>

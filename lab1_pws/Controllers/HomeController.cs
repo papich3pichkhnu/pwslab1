@@ -1,5 +1,8 @@
-﻿using lab1_pws.Models;
+﻿using FluentValidation;
+using FluentValidation.Results;
+using lab1_pws.Models;
 using lab1_pws.Services.Interfaces.Services;
+using lab1_pws.Validators;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
@@ -19,13 +22,15 @@ namespace lab1_pws.Controllers
         private readonly IFileService _fileService;
         private readonly ILogger<HomeController> _logger;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private IValidator<Person> _validator;
 
-        public HomeController(ILogger<HomeController> logger, IEmailSender emailSender, IWebHostEnvironment webHostEnvironment, IFileService fileService)
+        public HomeController(ILogger<HomeController> logger, IValidator<Person> validator, IEmailSender emailSender, IWebHostEnvironment webHostEnvironment, IFileService fileService)
         {
             _logger = logger;
             _emailSender = emailSender;
             _webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
+            _validator = validator;
         }
 
         [Route("home")]
@@ -43,6 +48,11 @@ namespace lab1_pws.Controllers
 
         [Route("feedback")]
         public IActionResult FeedBack()
+        {
+            return View();
+        }
+        [Route("person-form")]
+        public IActionResult PersonForm()        
         {
             return View();
         }
@@ -94,6 +104,28 @@ namespace lab1_pws.Controllers
                 new CookieOptions { Expires = DateTimeOffset.Now.AddDays(30), IsEssential=true });
 
             return LocalRedirect(returnUrl);
+        }
+
+        [HttpPost]
+        [Route("")]
+        public async Task<IActionResult> Create(Person person, string returnUrl)
+        {
+            ValidationResult result = await _validator.ValidateAsync(person);
+
+            if (!result.IsValid)
+            {
+                // Copy the validation results into ModelState.
+                // ASP.NET uses the ModelState collection to populate 
+                // error messages in the View.
+                result.AddToModelState(this.ModelState);
+
+                // re-render the view when validation failed.
+                return View("PersonForm", person);
+            }
+
+           
+            TempData["notice"] = "Person successfully created";
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
