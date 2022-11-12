@@ -1,5 +1,6 @@
-﻿<nav>
+﻿@using lab1_pws.Components
+<nav>
 @{
-    @await Component.InvokeAsync("Navbar");
+    @await Component.InvokeAsync(typeof(NavbarViewComponent));
 }
 </nav>
